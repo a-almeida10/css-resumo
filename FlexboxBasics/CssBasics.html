@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS: Propriedades FLEX </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+ 
+    
+      <h1>Fundamentos da Flexbox</h1>
+    <div>
+
+          <h3>Sem usar a propriedade flex</h3>
+              <div class="no-flex">
+                <div class="item">item 1</div>
+                <div class="item">item 2</div>
+                <div class="item">item 3</div>
+              </div/>
+
+
+          <h3>Display: flex</h3>
+              <div class="flex">
+                <div class="item">item 1</div>
+                <div class="item">item 2</div>
+                <div class="item">item 3</div>
+              </div>
+              <hr/>
+
+
+          <h3>Flex-direction: row</h3>
+              <ul class="flex-container row">
+                <li class="list-item">1</li>
+                <li class="list-item">2</li>
+                <li class="list-item">3</li>
+              </ul>
+
+          <h3>Flex-direction: row-reverse</h3>
+              <ul class="flex-container row-reverse">
+                <li class="list-item">1</li>
+                <li class="list-item">2</li>
+                <li class="list-item">3</li>
+              </ul>
+
+          <h3>Flex-direction: column</h3>
+              <ul class="flex-container column">
+                <li class="list-item">1</li>
+                <li class="list-item">2</li>
+                <li class="list-item">3</li>
+              </ul>
+
+          <h3>Flex-direction: column-reverse</h3>
+              <ul class="flex-container column-reverse">
+                <li class="list-item">1</li>
+                <li class="list-item">2</li>
+                <li class="list-item">3</li>
+              </ul>
+              <hr>
+          <h3>Flex-wrap: nowrap</h3>
+              <div class="wrap-container nowrap">
+                <div class="item-wrap pink">item 1</div>
+                <div class="item-wrap blue">item 2</div>
+                <div class="item-wrap violet">item 3</div>
+                <div class="item-wrap pink">item 4</div>
+                <div class="item-wrap blue">item 5</div>
+                <div class="item-wrap violet">item 6</div>
+                <div class="item-wrap pink">item 7</div>
+                <div class="item-wrap blue">item 8</div>
+                <div class="item-wrap violet">item 9</div>
+              </div>
+
+          <h3>Flex-wrap: wrap</h3>
+              <div class="wrap-container wrap">
+                <div class="item-wrap pink">item 1</div>
+                <div class="item-wrap blue">item 2</div>
+                <div class="item-wrap violet">item 3</div>
+                <div class="item-wrap pink">item 4</div>
+                <div class="item-wrap blue">item 5</div>
+                <div class="item-wrap violet">item 6</div>
+              </div>
+
+          <h3>Flex-wrap: wrap-reverse</h3>
+              <div class="wrap-container wrap-reverse">
+                <div class="item-wrap pink">item 1</div>
+                <div class="item-wrap blue">item 2</div>
+                <div class="item-wrap violet">item 3</div>
+                <div class="item-wrap pink">item 4</div>
+              </div>
+              <hr />
+
+          <h3>Flex-direction: column + Flex-wrap: nowrap</h3>
+              <div class="wrap-container-column nowrap">
+                <div class="item-wrap pink">item 1</div>
+                <div class="item-wrap blue">item 2</div>
+                <div class="item-wrap violet">item 3</div>
+                <div class="item-wrap pink">item 4</div>
+                <div class="item-wrap blue">item 5</div>
+                <div class="item-wrap violet">item 6</div>
+            
+              </div>
+
+          <h3>Flex-direction: column + Flex-wrap: wrap</h3>
+              <div class="wrap-container-column wrap">
+                <div class="item-wrap pink">item 1</div>
+                <div class="item-wrap blue">item 2</div>
+                <div class="item-wrap violet">item 3</div>
+                <div class="item-wrap pink">item 4</div>
+                <div class="item-wrap blue">item 5</div>
+                <div class="item-wrap violet">item 6</div>
+              </div>
+
+          <h3>Flex-direction: column + Flex-wrap: wrap-reverse</h3>
+              <div class="wrap-container-column wrap-reverse">
+                <div class="item-wrap pink">item 1</div>
+                <div class="item-wrap blue">item 2</div>
+                <div class="item-wrap violet">item 3</div>
+                <div class="item-wrap pink">item 4</div>
+              </div>
+              <hr />
+
+          <h3>Flex-flow: nowrap</h3>
+              <div class="flow-container">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+              </div>
+
+        <h3>Flex-flow: nowrap row-reverse </h3>
+            <div class="flow-container row-reverse">
+            <div class="item-flow pink">1</div>
+            <div class="item-flow blue">2</div>
+            <div class="item-flow violet">3</div>
+            <div class="item-flow pink">4</div>
+            <div class="item-flow blue">5</div>
+            <div class="item-flow violet">6</div>
+            <div class="item-flow pink">7</div>
+            <div class="item-flow blue">8</div>
+        </div>
+
+
+        <h3>Flex-flow: wrap</h3>
+              <div class="flow-container flex-wrap">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+          </div>
+
+          <h3>Flex-flow: wrap-reverse</h3>
+              <div class="flow-container flex-wrap-reverse">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+          </div>
+
+          <h3>Flex-flow: row-reverse + wrap-reverse</h3>
+              <div class="flow-container r-row-wrap">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+          </div>
+
+
+          <h3>Flex-flow: column wrap </h3>
+              <div class="flow-container flow-column">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+          </div>
+
+          <h3>Flex-flow: column-reverse wrap</h3>
+              <div class="flow-container flow-column-reverse">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+          </div>
+
+          <h3>Flex-flow: column-reverse + wrap-reverse</h3>
+              <div class="flow-container r-column-wrap">
+              <div class="item-flow pink">1</div>
+              <div class="item-flow blue">2</div>
+              <div class="item-flow violet">3</div>
+              <div class="item-flow pink">4</div>
+              <div class="item-flow blue">5</div>
+              <div class="item-flow violet">6</div>
+              <div class="item-flow pink">7</div>
+              <div class="item-flow blue">8</div>
+          </div>
+            <hr/>
+
+          <h3>Justify Content: Flex-start</h3>
+          <div class="justify-container flex-start">
+            <div class="item-justify pink">1</div>
+            <div class="item-justify violet"> item 2</div>
+            <div class="item-justify blue">3º item</div>
+         </div>
+
+
+         <h3>Justify Content: Flex-end</h3>
+          <div class="justify-container flex-end">
+            <div class="item-justify pink">1</div>
+            <div class="item-justify violet"> item 2</div>
+            <div class="item-justify blue">3º item</div>
+         </div>
+
+         <h3>Justify Content: Center</h3>
+          <div class="justify-container center ">
+            <div class="item-justify pink">1</div>
+            <div class="item-justify violet"> item 2</div>
+            <div class="item-justify blue">3º item</div>
+         </div>
+
+
+         <h3>Justify Content: space-between</h3>
+         <div class="justify-container space-between ">
+           <div class="item-justify pink">1</div>
+           <div class="item-justify violet"> item 2</div>
+           <div class="item-justify blue">3º item</div>
+        </div>
+
+        
+        <h3>Justify Content: space-around</h3>
+        <div class="justify-container space-around ">
+          <div class="item-justify pink">1</div>
+          <div class="item-justify violet"> item 2</div>
+          <div class="item-justify blue">3º item</div>
+       </div>
+
+
+       <h3>Justify Content: Flex-start Column</h3>
+          <div class="justify-container flex-start justify-column">
+            <div class="item-justify pink">1</div>
+            <div class="item-justify violet"> item 2</div>
+            <div class="item-justify blue">3º item</div>
+         </div>
+
+         <h3>Justify Content: Flex-end Column</h3>
+         <div class="justify-container flex-end justify-column">
+           <div class="item-justify pink">1</div>
+           <div class="item-justify violet"> item 2</div>
+           <div class="item-justify blue">3º item</div>
+        </div>
+
+        
+        <h3>Justify Content: Center Column</h3>
+        <div class="justify-container center justify-column">
+          <div class="item-justify pink" > 1</div>
+          <div class="item-justify violet"> item 2</div>
+          <div class="item-justify blue">3º item</div>
+       </div>
+
+       <h3>Justify Content: space-between Column</h3>
+       <div class="justify-container space-between justify-column ">
+         <div class="item-justify pink">1</div>
+         <div class="item-justify violet"> item 2</div>
+         <div class="item-justify blue">3º item</div>
+      </div>
+
+      <h3>Justify Content: space-around Column</h3>
+      <div class="justify-container space-around justify-column">
+        <div class="item-justify pink">1</div>
+        <div class="item-justify violet"> item 2</div>
+        <div class="item-justify blue">3º item</div>
+     </div>
+                          <hr/>
+     <h3>Align items : Center</h3>
+      <div class="align-container align-center">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Align items : stretch</h3>
+      <div class="align-container align-stretch">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+   
+      <h3>Align items : flex-start</h3>
+      <div class="align-container align-start">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Align items : flex-end</h3>
+      <div class="align-container align-end">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Align items : baseline</h3>
+      <div class="align-container align-baseline">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos- adicionando texto para ver o que acontece</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Align items : flex-start Column</h3>
+      <div class="align-container align-start justify-column">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Align items : flex-end Column</h3>
+      <div class="align-container align-end justify-column">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Align items : Center Column</h3>
+      <div class="align-container align-center justify-column">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+
+      <h3>Align items : baseline Column</h3>
+      <div class="align-container align-baseline justify-column">
+        <div class="item-align pink">1</div>
+        <div class="item-align blue">item dois(2)</div>
+        <div class="item-align violet">três</div>
+        <div class="item-align pink">Esse é o item quatro, ele é o mais longo de todos- adicionando texto para ver o que acontece</div>
+        <div class="item-align blue">item número cinco</div>
+      </div>
+      <h3>Alinahmento Central com Align items e Justify Content</h3>
+     <section class="container align-center center">
+      <div class="item-central pink"> Um pouco de texto para perceber o que acontece quando damos o alinhamento central para essa seção.
+        Vamos entender como organizar corretamente o texto no centro da página.
+      </div>
+     </section>
+
+
+
+  </div>
+</div>
+
+
+  </body>
+</html>
